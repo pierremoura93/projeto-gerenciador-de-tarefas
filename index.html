@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="page">
+    <section class="header-card">
+      <h1>Gerenciador de Tarefas</h1>
+      <p>Adicione suas tarefas e após executar, você pode excluir.</p><br/>
+
+      <form id="task-form">
+        <input id="task-input" type="text" placeholder="Digite uma nova tarefa" autocomplete="off" /><br/>
+        <button id="add-task-button" type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="card list-card">
+      <h2>Lista de tarefas</h2>
+      <ul id="task-list"></ul>
+    </section>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

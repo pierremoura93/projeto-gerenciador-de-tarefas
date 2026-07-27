@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e7e7e7;
+  color: #333;
+}
+
+.page {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 0 16px 40px;
+}
+
+.header-card,
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.header-card h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+.header-card p {
+  margin: 0;
+  color: #666;
+}
+
+#task-form {
+  display: grid;
+  gap: 12px;
+}
+
+#task-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+#task-input:focus {
+  border-color: #4b6b3b;
+  outline: none;
+}
+
+#add-task-button {
+  background: #2e5023;
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#add-task-button:hover {
+  background: #3d6833;
+}
+
+.list-card h2 {
+  margin-top: 0;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  margin-top: 12px;
+  background: #fafafa;
+}
+
+.task-item:first-child {
+  margin-top: 0;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #7a7a7a;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.complete-button,
+.delete-button {
+  min-width: 90px;
+}
+
+.complete-button {
+  background: #4a7729;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.complete-button:hover {
+  background: #5d8e33;
+}
+
+.task-item.completed .complete-button {
+  background: #a6a6a6;
+}
+
+.task-item.completed .complete-button:hover {
+  background: #8f8f8f;
+}
+
+.delete-button {
+  background: #2e5023;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #3d6833;
+}
+
+.empty-message {
+  color: #777;
+  padding: 14px 0 0;
+}
